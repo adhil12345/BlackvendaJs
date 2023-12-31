@@ -13,12 +13,12 @@ let count3 = document.getElementsByClassName(str3).length;
 let count2 = document.getElementsByClassName(str2).length;
 let count1 = document.getElementsByClassName(str1).length;
 
-document.querySelectorAll(".totalCountReview")[0].innerHTML =(`${countTotal}`);
-document.querySelectorAll(".fiveStarRating")[0].innerHTML =(`${count5}`);
-document.querySelectorAll(".fourStar")[0].innerHTML =(`${count4}`);
-document.querySelectorAll(".threeStar")[0].innerHTML =(`${count3}`);
-document.querySelectorAll(".toWStar")[0].innerHTML =(`${count2}`);
-document.querySelectorAll(".oneStar")[0].innerHTML =(`${count1}`);
+document.querySelectorAll(".totalCountReview")[0].innerHTML = `${countTotal}`;
+document.querySelectorAll(".fiveStarRating")[0].innerHTML = `${count5}`;
+document.querySelectorAll(".fourStar")[0].innerHTML = `${count4}`;
+document.querySelectorAll(".threeStar")[0].innerHTML = `${count3}`;
+document.querySelectorAll(".toWStar")[0].innerHTML = `${count2}`;
+document.querySelectorAll(".oneStar")[0].innerHTML = `${count1}`;
 
 var maxCount = 100;
 
@@ -46,5 +46,19 @@ document.querySelectorAll(".bar-3")[0].style.width = percentage3 + "%";
 document.querySelectorAll(".bar-2")[0].style.width = percentage2 + "%";
 document.querySelectorAll(".bar-1")[0].style.width = percentage1 + "%";
 
-// login page script 
-function userLogi(){window.location="https://www.blackvenda.lk/p/blog-page_22.html";}var customerName=document.getElementById("customer-name").textContent;if("admin"===customerName){$("#customer-name").click(function(e){window.location="https://www.blackvenda.lk/p/add-products.html"});}else{$("#customer-name").click(function(e){window.location="https://www.blackvenda.lk/p/blog-page_23.html"});}
+// login page script
+function userLogi() {
+    window.location = "https://www.blackvenda.lk/p/blog-page_22.html";
+}
+
+var customerName = document.getElementById("customer-name").textContent;
+
+if ("admin" === customerName) {
+    $("#customer-name").click(function (e) {
+        window.location = "https://www.blackvenda.lk/p/add-products.html";
+    });
+} else {
+    $("#customer-name").click(function (e) {
+        window.location = "https://www.blackvenda.lk/p/blog-page_23.html";
+    });
+}
