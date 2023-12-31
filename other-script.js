@@ -45,3 +45,20 @@ document.querySelectorAll(".bar-4")[0].style.width = percentage4 + "%";
 document.querySelectorAll(".bar-3")[0].style.width = percentage3 + "%";
 document.querySelectorAll(".bar-2")[0].style.width = percentage2 + "%";
 document.querySelectorAll(".bar-1")[0].style.width = percentage1 + "%";
+
+// login page script 
+function userLogi() {
+ window.location="https://www.blackvenda.lk/p/blog-page_22.html";
+}
+
+var customerName = document.getElementById("customer-name").textContent;
+
+if (customerName === "admin"){
+	$('#customer-name').click(function(e) {  
+     window.location="https://www.blackvenda.lk/p/add-products.html";
+});
+}else{
+$('#customer-name').click(function(e) {  
+     window.location="https://www.blackvenda.lk/p/blog-page_23.html";
+});
+}
